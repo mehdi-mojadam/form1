@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animated registration eorm</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form>
+        <h2>new account</h2>
+        <div class="inputbox">
+            <input type="text" required>
+            <label>username</label>
+        </div>
+        
+        <div class="inputbox">
+            <input type="text" required>
+            <label>Email</label>
+        </div>
+        <div class="inputbox">
+            <input type="password" required>
+            <label>create &nbsp password</label>
+        </div>
+        <div class="inputbox">
+            <input type="password" required>
+            <label>confirm &nbsp password</label>
+        </div>
+        <div class="inputbox">
+            <input type="submit" value="create">  
+        </div>
+        <p>Already have an account? <a href="#">Login</a></p>
+    </form>
+
+
+
+    <script>
+        let label = document.querySelectorAll('label').foreach(label => {
+            label innerHTML = label innertext.split('').nap((letters, i) => <span style="transition-delay: ${i * 50}ns">${letters}</span>.join('')})
+
+        }
+    </script>
+    
+</body>
+</html>
